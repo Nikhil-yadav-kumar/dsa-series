@@ -75,32 +75,56 @@
 //     }
 // }
 
-#include <iostream>
-using namespace std;
-int lin_search(int arr[],int n, int item){
-    for ( int i =0;i<=6;i++){
-        if (arr[i]==item){
-            return i;
-        }
-    }
-    return -1;
-}
+// #include <iostream>
+// using namespace std;
+// int lin_search(int arr[],int n, int item){
+//     for ( int i =0;i<=6;i++){
+//         if (arr[i]==item){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
 
-int main (){
-    int arr[6];
-    cout<<"enter the elements: ";
-    for(int i =1;i<=6;i++){
-        cin>>arr[i];
+// int main (){
+//     int arr[6];
+//     cout<<"enter the elements: ";
+//     for(int i =1;i<=6;i++){
+//         cin>>arr[i];
+//     }
+//     int item;
+//     cout<<"enter the item to be searched: ";
+//     cin>>item;
+//     int result=lin_search(arr,6,item);
+//     if(result!=-1){
+//         cout<<"elements found at index "<<result<<endl;
+//     }
+//     else {
+//         cout<<"elements not found";
+//     }
+//     return 0;
+// }
+
+#include<iostream>
+using namespace std;
+void reverseArray(int arr[],int size){
+    int start=0,end=size-1;
+    while(start< end ){
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+
     }
-    int item;
-    cout<<"enter the item to be searched: ";
-    cin>>item;
-    int result=lin_search(arr,6,item);
-    if(result!=-1){
-        cout<<"elements found at index "<<result<<endl;
+}
+int main(){
+    int arr[]={3,7,4,5,2,9,8,};
+    int size=7;
+    reverseArray(arr,size);
+
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
     }
-    else {
-        cout<<"elements not found";
-    }
+    cout<<endl;
     return 0;
+
 }
