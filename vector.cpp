@@ -13,12 +13,37 @@
 
 // }
 //for Each loop
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<char>vec={'a','b','c','d','e'};
+//     for( char i : vec){
+//         cout<< i<<endl;
+//     }
+// }
+
+//vector functions
 #include<iostream>
 #include<vector>
 using namespace std;
 int main(){
-    vector<char>vec={'a','b','c','d','e'};
-    for( char i : vec){
-        cout<< i<<endl;
+    vector<int> vec={3,4,5,6,7,8};
+    for(int i:vec){
+        cout<<i<<endl;
     }
-}
+    // cout<<"size= "<<vec.size()<<endl; // size functions
+    
+    // cout<<"after push back "<<endl;
+
+    // vec.push_back(9); // PUSH_BACK function
+    // for(int i:vec){
+    //     cout<<i<<endl;
+    // }
+    cout<<"after pop back "<<endl;
+
+    vec.pop_back(); // POP_BACK function
+    for(int i:vec){
+        cout<<i<<endl;
+    }
+} 
