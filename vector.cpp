@@ -37,6 +37,22 @@
 // }
 
 
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec={3,4,5,6,7,8};
+//     for(int i:vec){
+//         cout<<i<<endl;
+//     }    
+//     cout<<"after push back "<<endl;
+
+//     vec.push_back(9); // PUSH_BACK function
+//     for(int i:vec){
+//         cout<<i<<endl;
+//     }
+// }
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -45,17 +61,10 @@ int main(){
     for(int i:vec){
         cout<<i<<endl;
     }    
-    cout<<"after push back "<<endl;
+    cout<<"after pop back "<<endl;
 
-    vec.push_back(9); // PUSH_BACK function
+    vec.pop_back(); // POP_BACK function
     for(int i:vec){
         cout<<i<<endl;
     }
-}
-//     cout<<"after pop back "<<endl;
-
-//     vec.pop_back(); // POP_BACK function
-//     for(int i:vec){
-//         cout<<i<<endl;
-//     }
-// } 
+} 
