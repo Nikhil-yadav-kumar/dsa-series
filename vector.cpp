@@ -90,13 +90,30 @@
     
 // } 
 
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec={3,4,5,6,7,8};
+
+//     cout<<vec.at(3)<<endl;// back function
+       
+    
+// } 
+
 #include<iostream>
 #include<vector>
 using namespace std;
 int main(){
-    vector<int> vec={3,4,5,6,7,8};
-
-    cout<<vec.at(3)<<endl;// back function
-       
+    vector<int> vec;
+    vec.push_back(6);
+    vec.push_back(4);
+    vec.push_back(7);
+    vec.push_back(6);
+    vec.push_back(6);
     
-} 
+    cout<<"size= "<<vec.size()<<endl;
+    cout<<"capacity= "<<vec.capacity()<<endl;
+
+    return 0;
+}
