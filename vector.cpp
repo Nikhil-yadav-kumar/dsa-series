@@ -70,13 +70,22 @@
 // } 
 
 
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec={3,4,5,6,7,8};
+
+//     cout<<vec.front()<<endl;// front function    
+// } 
+
 #include<iostream>
 #include<vector>
 using namespace std;
 int main(){
     vector<int> vec={3,4,5,6,7,8};
 
-    cout<<vec.front()<<endl;// front function
+    cout<<vec.back()<<endl;// back function
        
     
 } 
